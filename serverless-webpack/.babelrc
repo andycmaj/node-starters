@@ -1,0 +1,14 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        },
+        "debug": true
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}
