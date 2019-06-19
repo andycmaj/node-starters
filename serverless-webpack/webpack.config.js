@@ -7,7 +7,14 @@ const slsw = require('serverless-webpack');
 module.exports = (async () => {
   const accountId = await slsw.lib.serverless.providers.aws.getAccountId();
   return {
-    mode: 'development',
+    mode: slsw.lib.webpack.isLocal ? 'development' : 'production',
+
+    devtool: 'nosources-source-map',
+    optimization: {
+      // We no not want to minimize our code.
+      minimize: false,
+    },
+
     entry: slsw.lib.entries,
     target: 'node',
     plugins: [
