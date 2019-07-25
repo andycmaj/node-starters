@@ -1,7 +1,7 @@
 {
-  "name": "athena-postgres",
+  "name": "node-cli",
   "version": "1.0.0",
-  "main": "sync.js",
+  "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
     "debug": "babel-node debug index.js"
@@ -11,7 +11,7 @@
     "dotenv": "^8.0.0",
     "figlet": "^1.2.3",
     "listr": "^0.14.3",
-    "inquirer": "^6.3.1",
+    "inquirer": "^6.4.1",
     "node-progress": "^0.1.0",
     "shelljs": "^0.8.3"
   },

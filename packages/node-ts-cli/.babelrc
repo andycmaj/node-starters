@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "@babel/typescript",
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "node": "current"
+        },
+        "debug": true
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/proposal-class-properties",
+    "@babel/transform-modules-commonjs",
+    "@babel/proposal-object-rest-spread"
+  ]
+}

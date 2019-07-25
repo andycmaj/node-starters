@@ -1,0 +1,35 @@
+{
+  "name": "node-ts-cli",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "babel-node-ts src/index.ts"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "dotenv": "^8.0.0",
+    "figlet": "^1.2.3",
+    "inquirer": "^6.4.1",
+    "listr": "^0.14.3",
+    "node-progress": "^0.1.0",
+    "shelljs": "^0.8.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.0",
+    "@babel/node": "^7.5.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+    "@babel/preset-env": "^7.5.2",
+    "@babel/preset-typescript": "^7.3.3",
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0",
+    "babel-eslint": "10.0.2",
+    "babel-node-ts": "^1.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.2"
+  }
+}
