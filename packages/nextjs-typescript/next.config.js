@@ -6,6 +6,8 @@ const withPlugins = require('next-compose-plugins');
 module.exports = withPlugins([withCss, withFonts, withImages], {
   webpack: (config, { dev, isServer }) => {
     if (dev) {
+      // https://github.com/webpack/webpack/issues/3078#issuecomment-497051466
+      config.module.noParse = /iconv-loader\.js/;
       config.module.rules.push({
         test: /\.(jsx?|gql|graphql|tsx?)$/,
         loader: 'eslint-loader',
